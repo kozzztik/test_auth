@@ -15,7 +15,7 @@ class AuthBackend(object):
         db_backend = db_backend_class(app.config.get('DB_BACKEND_SETTINGS', {}))
         auth_backend = {}
         for name, class_path in app.config.get('AUTH_BACKEND', {}).items():
-            auth_backend_class =  import_class(class_path)
+            auth_backend_class = import_class(class_path)
             auth_backend[name] = auth_backend_class(name, db_backend)
         if not auth_backend:
             raise ValueError('Auth backend not configured')

@@ -6,7 +6,7 @@ REDIS_SETTINGS = {
 }
 
 SQL_SETTINGS = {'DB': 'sqlite:///:memory:'}
-SQL_SETTINGS = {'DB': 'mysql+mysqldb://root:123@localhost/test'}
+# SQL_SETTINGS = {'DB': 'mysql+mysqldb://root:123@localhost/test'}
 
 # DB_BACKEND = 'db_backend.redis_backend.RedisBackend'
 # DB_BACKEND_SETTINGS = REDIS_SETTINGS
